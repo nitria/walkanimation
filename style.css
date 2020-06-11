@@ -21,7 +21,6 @@ p {
   width: 152px;
   height: 296px;
   background-image: url(walking.png);
-  z-index: 10000000000;
 }
 
 .scrolling #img {
