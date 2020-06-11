@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+p {
+  width: 600px;
+  text-align: left;
+  padding: 60px;
+  margin: 0 auto;
+}
+#img {
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  width: 152px;
+  height: 296px;
+  background-image: url(/walking.png);
+}
+
+.scrolling #img {
+  -webkit-animation: walk 0.4s steps(4) infinite;
+  animation: walk 0.4s steps(4) infinite;
+}
+
+@-webkit-keyframes walk {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 606px;
+  }
+}
+
+@keyframes walk {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 606px;
+  }
+}
